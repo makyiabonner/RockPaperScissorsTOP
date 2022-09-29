@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(31, 31, 78);
+    animation: 10s bgcolorswitcher alternate infinite; 
+}
+@keyframes bgcolorswitcher{
+    0%{
+        background:rgb(31, 31, 78);
+    }
+    100%{
+        background:rgb(0, 79, 116);
+    }
+}
