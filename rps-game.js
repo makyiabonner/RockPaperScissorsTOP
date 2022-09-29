@@ -10,7 +10,7 @@ cpu = choices.at(Math.floor(Math.random()*3));
         console.log(`Round ${i}`)
         let cpuWinCount = 0
         let p1WinCount = 0
-        switch (prompt() + cpu){
+        switch (p1 + cpu){
             case "paperrock": "paperrock"
             case "rockscissors": "rockscissors"
             case "scissorspaper": "scissorspaper"
