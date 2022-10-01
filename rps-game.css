@@ -2,6 +2,7 @@ body{
     background-color: rgb(31, 31, 78);
     animation: 10s bgcolorswitcher alternate infinite; 
 }
+/* Creating Bg color switcher */
 @keyframes bgcolorswitcher{
     0%{
         background:rgb(31, 31, 78);
@@ -9,4 +10,15 @@ body{
     100%{
         background:rgb(0, 79, 116);
     }
+}
+div{
+    display:flex;
+    justify-content: space-around;
+    margin:200px,200px;
+}
+.rps{
+    border: solid rgb(31, 31, 78) 20px;
+    border-radius:30%;
+    width: 20vh;
+    height:20vh;
 }
