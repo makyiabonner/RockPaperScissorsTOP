@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('pricedown_bl-webfont.woff2') format('woff2'),
+         url('pricedown_bl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
     background-color: rgb(31, 31, 78);
     animation: 10s bgcolorswitcher alternate infinite; 
@@ -11,14 +19,26 @@ body{
         background:rgb(0, 79, 116);
     }
 }
-
+h1{
+   font-family: 'pricedownblack';
+   font-size:10em;
+   color:white;
+}
 div{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     margin:200px,200px;
+}
+#hud1{
+    border-radius: 60%;
+    border: solid rgb(22, 17, 36);
+    width:60vh;
+    height:20vh;
+    background:rgb(22, 17, 36)
 }
 .rps{
     border: solid rgb(31, 31, 78) 20px;
+    background-color:rgb(31, 31, 78);
     border-radius:30%;
     width: 20vh;
     height:20vh;
