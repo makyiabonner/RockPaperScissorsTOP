@@ -8,7 +8,7 @@
 }
 body{
     background-color: rgb(31, 31, 78);
-    animation: 10s bgcolorswitcher alternate infinite; 
+    animation: 5s bgcolorswitcher alternate infinite; 
 }
 /* Creating Bg color switcher */
 @keyframes bgcolorswitcher{
@@ -24,22 +24,10 @@ h1{
    font-size:10em;
    color:white;
 }
-#hud1{
+#hud{
     display:flex;
     overflow:hidden;
     align-items:center;
-}
-h3{
-    font-family: 'pricedownblack';
-    color:white;
-    font-size:3rem;
-    justify-content:center;
-    align-items:flex-start;
-}
-div{
-    display:flex;
-    justify-content: space-around; 
-    margin:200px,200px;
 }
 #hud1{
     border-radius: 60%;
@@ -48,10 +36,26 @@ div{
     height:20vh;
     background:rgb(22, 17, 36)
 }
+h3{
+    font-family: 'pricedownblack';
+    color:white;
+    font-size:3rem;
+    justify-content:center;
+    align-items:center;
+}
+div{
+    display:flex;
+    justify-content: space-around; 
+    margin:200px,200px;
+}
 .rps{
     border: solid rgb(31, 31, 78) 20px;
     background-color:rgb(31, 31, 78);
     border-radius:30%;
     width: 20vh;
     height:20vh;
+}
+img:hover{
+    transform: scale(2,2);
+    transition: 1s;
 }
