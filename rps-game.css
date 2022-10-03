@@ -26,7 +26,7 @@ h1{
 }
 #hud{
     display:flex;
-    overflow:hidden;
+   
     align-items:center;
 }
 #hud1{
@@ -34,7 +34,8 @@ h1{
     border: solid rgb(22, 17, 36);
     width:60vh;
     height:20vh;
-    background:rgb(22, 17, 36)
+    background:rgb(22, 17, 36);
+    overflow:hidden;
 }
 h3{
     font-family: 'pricedownblack';
@@ -54,6 +55,7 @@ div{
     border-radius:30%;
     width: 20vh;
     height:20vh;
+    transition: 1s  linear;
 }
 img:hover{
     transform: scale(2,2);
