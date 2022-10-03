@@ -2,7 +2,7 @@
 const rock = document.getElementById("rock")
 const paper = document.getElementById("paper")
 const scissors = document.getElementById("scissors")
-const h3 = document.getElementsByTagName("h3")
+const score = document.getElementById("score")
 
 let cpuWinCount = 0
 let p1WinCount = 0
@@ -24,8 +24,10 @@ function rps(p1,cpu){
             else if(p1 =="scissors" && cpu =="rock" || p1=="rock" && cpu =="paper" || p1=="paper" && cpu=="scissors"){
                 cpuWinCount++;
             }
-               console.log(`${p1WinCount}:${cpuWinCount}`)
+               score.textContent = p1WinCount + "|" + cpuWinCount
         }
+        score.textContent = p1WinCount + "|" + cpuWinCount
+
         // giving buttons choices
          rock.addEventListener('click', () =>{
             rps("rock");})

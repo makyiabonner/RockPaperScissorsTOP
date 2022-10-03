@@ -40,9 +40,10 @@ h1{
 h3{
     font-family: 'pricedownblack';
     color:white;
-    font-size:3rem;
+    font-size:9rem;
     justify-content:center;
     align-items:center;
+    margin:0 auto;
 }
 div{
     display:flex;
