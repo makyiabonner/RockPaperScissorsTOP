@@ -6,7 +6,8 @@ const score = document.getElementById("score")
 
 let cpuWinCount = 0
 let p1WinCount = 0
-let i = 0
+
+for(let round = 1;round <= 5; round++){
 // establishing players and creating the functionality of the game
 function rps(p1,cpu){
     //Create the gameplay choices for rock paper scissors
@@ -14,8 +15,7 @@ function rps(p1,cpu){
     cpu = choices.at(Math.floor(Math.random()*3));
   
     //round count and rules
-    i++
-    console.log(i)
+    console.log(round)
 
             if(p1 === cpu){}
             else if(p1 =="rock" && cpu =="scissors" || p1 =="paper" && cpu=="rock" || p1=="scissors" && cpu=="paper"){
@@ -25,6 +25,7 @@ function rps(p1,cpu){
                 cpuWinCount++;
             }
                score.textContent = p1WinCount + "|" + cpuWinCount
+            }
         }
         score.textContent = p1WinCount + "|" + cpuWinCount
 
@@ -35,13 +36,15 @@ function rps(p1,cpu){
             rps("paper");})
          scissors.addEventListener('click', () =>{
             rps("scissors");})
-           
+          
+            if(p1WinCount === 5){
             if(p1WinCount > cpuWinCount){
                 console.log("you win")
             }
             else if(p1WinCount < cpuWinCount){
                 console.log("you lose")
             }
-            else{console.log("tie game")}    
+            else{console.log("tie game")}
+        }    
         
     
