@@ -26,7 +26,6 @@ h1{
 }
 #hud{
     display:flex;
-   
     align-items:center;
 }
 #hud1{
@@ -46,7 +45,23 @@ h3{
     margin:30 auto;
     
 }
-
+.player-choice,.computer-choice{
+    font-family: 'pricedownblack';
+    color:white;
+    font-size:3rem;
+    margin-top: -140;
+}
+.player-choice{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.computer-choice{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-top:-122;
+}
 div{
     display:flex;
     justify-content: space-around; 
