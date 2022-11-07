@@ -52,12 +52,10 @@ h3{
 }
 #playerChoice{
     display:flex;
-    color:orangered;
     justify-content:flex-start;
 }
 #computerChoice{
     display:flex;
-    color:rgb(224, 143, 143);
     justify-content:flex-end;
     margin-top:-122;
 }

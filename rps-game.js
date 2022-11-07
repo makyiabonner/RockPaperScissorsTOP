@@ -20,11 +20,13 @@ function rps(p1,cpu){
     if(p1 === cpu){}
     else if(p1 =="rock" && cpu =="scissors" || p1 =="paper" && cpu=="rock" || p1=="scissors" && cpu=="paper"){
       p1WinCount++;
-
-
+      p1Choice.style.color = "green";
+    cpuChoice.style.color = "rgb(165, 0, 0)";
     }
     else if(p1 =="scissors" && cpu =="rock" || p1=="rock" && cpu =="paper" || p1=="paper" && cpu=="scissors"){
          cpuWinCount++;
+         p1Choice.style.color = "rgb(165, 0, 0)";
+         cpuChoice.style.color = "green";
     }
     
     score.textContent = p1WinCount + "|" + cpuWinCount;
@@ -39,7 +41,7 @@ function rps(p1,cpu){
         cpuWinCount = 0;
 
         }
-        return score.textContent , p1Choice.textContent = p1 , cpuChoice.textContent = cpu
+        return score.textContent , p1Choice.textContent = p1 ,  cpuChoice.textContent = cpu
 
         
     }    
