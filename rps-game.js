@@ -3,8 +3,8 @@ const rock = document.getElementById("rock")
 const paper = document.getElementById("paper")
 const scissors = document.getElementById("scissors")
 const score = document.getElementById("score")
-const p1Choice = document.getElementById("player-name")
-const cpuChoice = document.getElementById("computer-choice")
+const p1Choice = document.getElementById("playerChoice")
+const cpuChoice = document.getElementById("computerChoice")
 
 let cpuWinCount = 0
 let p1WinCount = 0
@@ -39,7 +39,7 @@ function rps(p1,cpu){
         cpuWinCount = 0;
 
         }
-        return score.textContent
+        return score.textContent , p1Choice.textContent = p1 , cpuChoice.textContent = cpu
 
         
     }    
