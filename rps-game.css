@@ -45,19 +45,15 @@ h3{
     margin:30 auto;
     
 }
+#choice{
+    display:flex;
+    justify-content: space-around;
+    margin:40 auto;
+}
 #playerChoice,#computerChoice{
     font-family: 'pricedownblack';
     font-size:3rem;
     margin-top: -140;
-}
-#playerChoice{
-    display:flex;
-    justify-content:flex-start;
-}
-#computerChoice{
-    display:flex;
-    justify-content:flex-end;
-    margin-top:-122;
 }
 div{
     display:flex;
